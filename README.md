@@ -1,3 +1,3 @@
 # Description
 
-This project is the Azure Database Migration for AiCore, aiming to migrate to Azure SQL Database using Azure Micsosoft tools.
+This project is the Azure Database Migration for AiCore, aiming to migrate data to Azure SQL Database using Azure Micsosoft tools.
