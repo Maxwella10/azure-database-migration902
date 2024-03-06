@@ -47,3 +47,37 @@ Enable Remote Desktop Protocol (RDP):
 
 ### Task 3: Installing SQL Server and SSMS
 
+
+SQL Server Installation:
+
+SQL Server is the relational database management system. You can download the latest version from the official Microsoft website. Follow these steps:
+
+    Visit the SQL Server Downloads page.
+
+    Choose the appropriate edition (e.g., Developer, Express, Standard, etc.) based on your requirements.
+
+    I choose Develop edition for this for project.
+
+    Download the installer and run it.
+
+    Follow the installation wizard, specifying necessary configurations like instance name, authentication mode, and data directories.
+
+    Once installed, start the SQL Server service.
+
+SQL Server Management Studio
+
+SQL Server Management Studio (SSMS) Installation:
+
+ SSMS provides a comprehensive environment for managing SQL Server instances and databases. Here’s how to install it:
+
+    Visit the [SSMS download page](https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16).
+
+    Click on the “Free Download” button for SQL Server Management Studio (SSMS) 19.3 (the latest GA version as of now).
+
+    Install SSMS by following the setup instructions.
+
+    During installation, you’ll be prompted to choose components. Ensure you select “Management Tools - Complete” to include SSMS.
+
+    Agree to the license terms and privacy statement.
+
+    Once installed, launch SSMS and connect to your SQL Server instance.
