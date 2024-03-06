@@ -96,3 +96,6 @@ Explore the AdventureWorks Database:
     Explore different aspects of the database to understand its structure and relationships.
     You can start by querying tables like Sales.SalesOrderHeader, Production.Product, or HumanResources.Employee.
 
+## Milestone 3
+
+### Task 1: Setting up Azure SQL Database
