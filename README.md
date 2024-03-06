@@ -20,10 +20,12 @@ Set up networking (assign a public IP, configure security groups, etc.).
 
 Install any necessary tools (such as SSH for Linux VMs).
 
+
+### Task 2: Connecting Virtual Machine
+
+
 Access the VM:
 
 Use SSH (for Linux) or Remote Desktop (for Windows) to connect to the VM. I choose to connect my VM through Remote Desktop because i used windows VM operating system for this project.
 
 Ensure proper firewall rules to allow SQL Server traffic.
-
-### Task 2: Connecting Virtual Machine
