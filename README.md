@@ -2,7 +2,10 @@
 
 This project is the Azure Database Migration for AiCore, aiming to migrate data to Azure SQL Database using Azure Micsosoft tools.
 
-##  Task 1: Setting up virtual Machine
+## Milestone 2
+
+
+###  Task 1: Setting up virtual Machine
 
 Steps:
 
@@ -22,3 +25,5 @@ Access the VM:
 Use SSH (for Linux) or Remote Desktop (for Windows) to connect to the VM. I choose to connect my VM through Remote Desktop because i used windows VM operating system for this project.
 
 Ensure proper firewall rules to allow SQL Server traffic.
+
+### Task 2: Connecting Virtual Machine
