@@ -29,3 +29,17 @@ Access the VM:
 Use SSH (for Linux) or Remote Desktop (for Windows) to connect to the VM. I choose to connect my VM through Remote Desktop because i used windows VM operating system for this project.
 
 Ensure proper firewall rules to allow SQL Server traffic.
+
+Configure Network Settings:
+
+    Assign a static IP address to the VM. This ensures consistency and easy access.
+
+    Set up DNS settings to resolve domain names.
+
+Enable Remote Desktop Protocol (RDP):
+
+    Go to Control Panel > System > Remote settings.
+
+    Enable “Allow remote connections to this computer.”
+
+    Ensure that the user account you’ll use for RDP has proper permissions.
