@@ -9,16 +9,16 @@ This project is the Azure Database Migration for AiCore, aiming to migrate data 
 
 Steps:
 
-Choose a Cloud Provider: Select a cloud provider (such as Microsoft Azure) to create a Virtual Machine (VM).
+    Choose a Cloud Provider: Select a cloud provider (such as Microsoft Azure) to create a Virtual Machine (VM).
 
-Create a Virtual Machine Instance:
+    Create a Virtual Machine Instance:
 
-the VM size for this project was 16gb, 
-region chosen for this project was UKSouth, and operating system (Windows or Linux).
+    the VM size for this project was 16gb, 
+    region chosen for this project was UKSouth, and operating system (Windows or Linux).
 
-Set up networking (assign a public IP, configure security groups, etc.).
+    Set up networking (assign a public IP, configure security groups, etc.).
 
-Install any necessary tools (such as SSH for Linux VMs).
+    Install any necessary tools (such as SSH for Linux VMs).
 
 
 ### Task 2: Connecting Virtual Machine
