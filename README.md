@@ -71,6 +71,7 @@ SQL Server Management Studio (SSMS) Installation:
     Download the AdventureWorks Backup File:
     First, ensure you have the AdventureWorks backup file. If you don’t, you can download it from the official Microsoft GitHub repository.
     Choose the appropriate version (e.g., AdventureWorks2019.bak) based on your SQL Server version.
+    I used AdventureWorks2022.bak for this project.
 
 Restore the Database:
 
