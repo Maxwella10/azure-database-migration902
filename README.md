@@ -43,3 +43,7 @@ Enable Remote Desktop Protocol (RDP):
     Enable “Allow remote connections to this computer.”
 
     Ensure that the user account you’ll use for RDP has proper permissions.
+
+
+### Task 3: Installing SQL Server and SSMS
+
