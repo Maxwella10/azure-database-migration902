@@ -133,7 +133,8 @@ Task 2: Preparation for Migration.
 
 Download Azure Data Studio:
 
-    Visit the Azure Data Studio download page.
+Visit the [Azure Data Studio download page](https://learn.microsoft.com/en-us/azure-data-studio/download-azure-data-studio?tabs=win-install%2Cwin-user-install%2Credhat-install%2Cwindows-uninstall%2Credhat-uninstall).
+
     Click the “User installer (recommended)” hyperlink to initiate the download. This installer is tailored for individual users and simplifies installations and updates.
     
 Installation:
