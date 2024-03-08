@@ -130,7 +130,7 @@ Connection String:
     Use tools like Azure Data Studio, SQL Server Management Studio (SSMS), or your preferred programming language (e.g., Python, C#) to connect to the Azure SQL Database using the connection string.
     Verify that you can successfully connect and query the database.
 
-Task 2: Preparation for Migration.
+### Task 2: Preparation for Migration.
 
 Download Azure Data Studio:
 
@@ -155,3 +155,23 @@ Connect to Your On-Premises Database:
     Click the “New Connection” button.
     Provide the necessary details for your existing on-premises database, such as server name, authentication method, and credentials.
     Test the connection to ensure it’s successful.
+
+
+
+### Task 3: Connecting to Azure SQL Database
+
+
+Connect to Your Azure SQL Database:
+
+    Open Azure Data Studio.
+    If the Welcome page doesn’t automatically appear, you can access it by selecting Help > Welcome.
+    Click New Connection to open the Connection pane.
+    Fill in the following details using your Azure SQL Database information:
+    Server name: The fully qualified server name (e.g., servername.database.windows.net).
+    Authentication: Choose SQL Login.
+    User name: Use the server admin account user name.
+    Password: Enter the server admin account password.
+    Save Password: Select Yes if you want to avoid entering the password each time.
+    Leave the Database name field blank since you’re only connecting to the server.
+    Set the Server Group to <Default> or a specific group you’ve created.
+    Click Connect.
