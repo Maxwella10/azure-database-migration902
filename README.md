@@ -175,3 +175,29 @@ Connect to Your Azure SQL Database:
     Leave the Database name field blank since you’re only connecting to the server.
     Set the Server Group to <Default> or a specific group you’ve created.
     Click Connect.
+
+
+### Task 4: Schema Migration
+
+
+Install the SQL Server Schema Compare Extension:
+
+    In Azure Data Studio, select the Extensions Icon (usually represented by a square grid) to view available extensions.
+    Search for the Schema Compare extension and select it to view its details.
+    Click Install to add the extension.
+    Once installed, click Reload to enable the extension in Azure Data Studio (this step is only required when installing an extension for the first time).
+    
+Compare and Migrate Schema:
+
+    To compare schemas, open the Schema Compare dialog box:
+    Right-click a database in Object Explorer and select Schema Compare.
+    The database you select becomes the Source database in the comparison.
+    You can customize the comparison by clicking the Options button in the toolbar.
+    Click Compare to view the results of the comparison.
+    
+To migrate schema changes:
+
+    Install both the Schema Compare and SQL Database Project extensions.
+    From a Database dashboard, select Update Project from Database in the toolbar.
+    Choose the existing SQL project and the desired file structure for new objects.
+    Review the changes in Schema Compare before applying them to the SQL project.
