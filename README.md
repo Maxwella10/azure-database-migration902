@@ -201,3 +201,43 @@ To migrate schema changes:
     From a Database dashboard, select Update Project from Database in the toolbar.
     Choose the existing SQL project and the desired file structure for new objects.
     Review the changes in Schema Compare before applying them to the SQL project.
+
+
+### Task 5: Data Migration 
+
+Prerequisites:
+
+    If you don’t have an Azure subscription, create a free Azure account before you begin.
+    Ensure that you have Azure Data Studio installed. If not, you can download it from the Azure Data Studio download page.
+    
+Install the Azure SQL Migration Extension:
+
+    Open Azure Data Studio.
+    In the extensions manager, search for “Azure SQL Migration.”
+    Select the Azure SQL Migration extension and view its details.
+    Click Install to add the extension.
+    Once installed, you’ll see the Azure SQL Migration extension in the extension list.
+    
+Connecting to Your On-Premises Database:
+
+    Connect to your on-premises SQL Server instance within Azure Data Studio.
+    Ensure that you have the necessary permissions to access the source database.
+    
+Assess and Migrate:
+
+    The extension provides a responsive UI for an end-to-end migration experience.
+    It starts with a migration readiness assessment and SKU recommendation (preview) based on performance data.
+    You can evaluate SQL Server instances and identify databases ready for migration to Azure SQL targets.
+    The SKU recommendation engine collects performance data from the on-premises source SQL Server instance and generates right-sized SKU recommendations for your Azure SQL target.
+    The extension uses Azure Database Migration Service to orchestrate data movement activities, allowing you to run migrations online (minimal downtime) or offline (persistent downtime) based on your business needs.
+    You can also configure a self-hosted integration runtime to access source SQL Server instance backup files in your on-premises environment.
+    It provides a secure and improved user experience for migrating TDE databases and SQL/Windows logins to Azure SQL.
+    
+Migration Scenarios:
+The extension supports various migration scenarios, including:
+
+    SQL Server to Azure SQL Managed Instance (online/offline).
+    SQL Server to SQL Server on an Azure virtual machine (online/offline).
+    SQL Server to Azure SQL Database (offline).
+    
+Remember to deploy the database schema in Azure SQL Database before starting the migration.
