@@ -38,6 +38,9 @@ Enable Remote Desktop Protocol (RDP):
     Ensure that the user account you’ll use for RDP has proper permissions.
 
 
+
+
+
 ### Task 3: Installing SQL Server and SSMS
 
 
@@ -125,3 +128,28 @@ Connection String:
     Test the Connection:
     Use tools like Azure Data Studio, SQL Server Management Studio (SSMS), or your preferred programming language (e.g., Python, C#) to connect to the Azure SQL Database using the connection string.
     Verify that you can successfully connect and query the database.
+
+Task 2: Preparation for Migration.
+
+Download Azure Data Studio:
+
+    Visit the Azure Data Studio download page.
+    Click the “User installer (recommended)” hyperlink to initiate the download. This installer is tailored for individual users and simplifies installations and updates.
+    
+Installation:
+
+    Once the download is complete, double-click the Azure Data Studio executable to launch the setup wizard.
+    Follow the on-screen instructions to install Azure Data Studio.
+    Note that this installation doesn’t require administrator privileges since it’s installed under your user’s Local AppData folder.
+    
+Launch Azure Data Studio:
+
+    You can now launch Azure Data Studio from the Start Menu or by searching for “sqlops.”
+    Alternatively, run the command sqlops in the command prompt.
+    
+Connect to Your On-Premises Database:
+
+    Open Azure Data Studio.
+    Click the “New Connection” button.
+    Provide the necessary details for your existing on-premises database, such as server name, authentication method, and credentials.
+    Test the connection to ensure it’s successful.
