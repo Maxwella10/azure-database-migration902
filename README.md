@@ -197,7 +197,7 @@ Compare and Migrate Schema:
     
 To migrate schema changes:
 
-    Install both the Schema Compare and SQL Database Project extensions.
+    Install both the Schema Compare and Azure SQL Migration extensions.
     From a Database dashboard, select Update Project from Database in the toolbar.
     Choose the existing SQL project and the desired file structure for new objects.
     Review the changes in Schema Compare before applying them to the SQL project.
