@@ -61,7 +61,8 @@ SQL Server Management Studio (SSMS) Installation:
 
  SSMS provides a comprehensive environment for managing SQL Server instances and databases. Here’s how to install it:
 
-    Visit the [SSMS download page](https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16).
+Visit the [SSMS download page](https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16).
+
     Click on the “Free Download” button for SQL Server Management Studio (SSMS) 19.3 (the latest GA version as of now).
     Install SSMS by following the setup instructions.
     During installation, you’ll be prompted to choose components. Ensure you select “Management Tools - Complete” to include SSMS.
