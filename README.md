@@ -241,3 +241,63 @@ The extension supports various migration scenarios, including:
     SQL Server to Azure SQL Database (offline).
     
 Remember to deploy the database schema in Azure SQL Database before starting the migration.
+
+
+### Task 6: Validating Migration Success
+
+Schema Validation:
+
+    Connect to the Azure SQL Database using Azure Data Studio or any SQL Server client.
+    Compare the schema of the migrated database with the source database to ensure that all tables, views, stored procedures, and other objects were migrated successfully.
+    Check for any schema-related errors or missing objects.
+    
+Data Validation:
+
+    Execute sample queries to compare data between the source and target databases.
+    Verify that the number of rows in critical tables matches between the on-premise and Azure SQL databases.
+    Use checksums or hash functions to compare the integrity of data between the source and target.
+    
+Index and Constraints Validation:
+
+    Check that indexes and constraints (primary keys, foreign keys) have been successfully migrated.
+    Verify the index structures and configurations to ensure optimal performance.
+
+Stored Procedures, Functions, and Triggers:
+
+    Validate the migration of stored procedures, functions, and triggers.
+    Test the execution of critical stored procedures to ensure they perform as expected in the Azure SQL Database.
+    
+Configuration and Settings:
+
+    Verify that database settings, configurations, and options have been migrated correctly.
+    Check compatibility levels, collation settings, and any database-specific configurations.
+
+Permissions and Security:
+
+    Confirm that user accounts, roles, and permissions have been migrated accurately.
+    Validate that security settings, such as firewall rules, are configured correctly in Azure SQL Database.
+
+Data Consistency and Integrity:
+
+    Perform data consistency checks, especially if the migration involved downtime.
+    Validate that any data modifications made during the migration process are accounted for and reflect accurately in the Azure SQL Database.
+    
+Application Integration Testing:
+
+    If possible, conduct integration testing with the applications connected to the migrated database.
+    Verify that the applications can read and write data as expected.
+
+Error Handling and Logging:
+
+    Review any migration logs or reports generated during the migration process.
+    Address and investigate any reported errors or warnings.
+    
+Performance Testing:
+
+    Conduct performance tests to ensure that the Azure SQL Database meets the performance expectations.
+    Monitor and optimize queries if necessary.
+
+Backup and Recovery Testing:
+
+    Ensure that backup and recovery mechanisms are in place.
+    Perform a test restore to validate the backup and recovery processes.
