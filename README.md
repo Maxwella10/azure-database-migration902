@@ -99,3 +99,29 @@ Explore the AdventureWorks Database:
 ## Milestone 3
 
 ### Task 1: Setting up Azure SQL Database
+
+
+Create an Azure SQL Database:
+
+    Log in to your Azure Portal.
+    Navigate to the SQL databases section.
+    Click on + Add to create a new database.
+    Choose the appropriate settings, such as database name, resource group, server, and pricing tier.
+    Ensure that you select SQL authentication (username and password) during the setup process.
+    
+Configure Firewall Rules:
+
+    Once your database is created, go to the Firewall settings section.
+    Add your IP address to the allowed IP list. This step ensures that you can connect to the database securely.
+    You can also configure a range of IP addresses if needed.
+    
+SQL Login Credentials:
+
+    Make sure you have the SQL login credentials (username and password) handy. These will be used to authenticate your application or tools when connecting to the database.
+    
+Connection String:
+
+    Retrieve the connection string for your Azure SQL Database. This string contains all the necessary information for connecting to the database, including the server name, database name, username, and password.
+    Test the Connection:
+    Use tools like Azure Data Studio, SQL Server Management Studio (SSMS), or your preferred programming language (e.g., Python, C#) to connect to the Azure SQL Database using the connection string.
+    Verify that you can successfully connect and query the database.
