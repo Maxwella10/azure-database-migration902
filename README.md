@@ -546,3 +546,12 @@ Application Testing (Again): Test your application against the restored primary 
 
 
 ![](https://github.com/Maxwella10/azure-database-migration902/blob/main/images/migration_failover_3.png)
+
+
+
+## Milestone 7
+
+
+
+### Task 1: Configure Microsoft Entra ID Azure SQL Database
+
