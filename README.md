@@ -522,12 +522,21 @@ Evaluate Availability and Data Consistency:
     Application Testing: Test your application against the new primary endpoints in East US. Ensure it behaves as expected and handles read and write operations.
     
 
-![]()
+![](https://github.com/Maxwella10/azure-database-migration902/blob/main/images/migration_failover_2.png)
+
 
 Data Consistency: Verify that the data in the secondary region is consistent with the state just before the failover. Check critical records and transactions.
+
 Monitoring: Monitor performance and availability of the new primary. Look for any anomalies or issues.
+
 Failback to Primary Region:
+
 Stabilize the Secondary: If everything looks good, plan for the failback to the primary region (UK South).
+
 Initiate Failback: In the Azure portal or using Azure CLI, initiate a failback to the primary region. The original primary becomes the new primary again.
+
 DNS Update (Again): DNS entries will be updated once more, pointing back to the original primary endpoints.
+
 Application Testing (Again): Test your application against the restored primary endpoints in UK South. Ensure it functions correctly.
+
+![]()
