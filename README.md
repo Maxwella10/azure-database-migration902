@@ -668,3 +668,32 @@ Least Privilege: Always assign the minimum necessary permissions to users. In th
 Regular Review: Periodically review user roles and permissions to ensure they align with business requirements.
 
 Logging and Auditing: Enable auditing and monitor logs to track user activity
+
+
+
+### Configuration Process
+Enabling Microsoft Entra ID Authentication:
+
+    Associated our Azure subscription with our Microsoft Entra tenant.
+    Configured Microsoft Entra-only authentication for our Azure SQL Database.
+    This ensures that only Entra ID identities can authenticate.
+    
+Role Definitions:
+
+Microsoft Entra Admin: Assigned an admin who manages user access and permissions.
+
+DB Reader User: Created a read-only user for querying the database.
+
+User Creation and Permissions:
+
+Created the DB Reader user in Microsoft Entra ID.
+
+Assigned the db_datareader role to the DB Reader user in Azure Data Studio.
+
+UML Diagram: Architecture.
+
+UML diagram for this project is below
+
+![]
+
+
