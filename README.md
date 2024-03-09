@@ -634,3 +634,37 @@ High Availability: Consider implementing geo-replication and failover for disast
 
 ### Task 2: Create DB Reader User
 
+#### Creating a DB Reader User with Microsoft Entra ID Authentication
+
+Create a New User in Microsoft Entra ID:
+
+    As an admin, sign in to the Azure portal.
+    Navigate to your Azure SQL Database.
+    Under Settings, go to Active Directory admin.
+    Add a new user by specifying their Microsoft Entra ID (Azure AD) email address.
+    Assign the user a role (e.g., DB Reader).
+    
+Assign the db_datareader Role:
+
+    Open Azure Data Studio.
+    Connect to your production database using the Microsoft Entra admin credentials.
+    Execute the following SQL query to assign the db_datareader role to the DB Reader user:
+
+    USE YourDatabaseName;
+ALTER ROLE db_datareader ADD MEMBER [YourEntraUser@YourTenant.onmicrosoft.com];
+
+Replace YourDatabaseName with your actual database name and YourEntraUser with the DB Reader user’s Microsoft Entra ID.
+
+Test Permissions:
+
+    Reconnect to your production database using Azure Data Studio and the credentials of the new DB Reader AD user.
+    Run read queries (SELECT statements) against various tables to ensure the user has read-only access.
+    Verify that the user cannot modify data or perform any write operations.
+    
+Insights and Best Practices
+
+Least Privilege: Always assign the minimum necessary permissions to users. In this case, the db_datareader role provides read-only access.
+
+Regular Review: Periodically review user roles and permissions to ensure they align with business requirements.
+
+Logging and Auditing: Enable auditing and monitor logs to track user activity
