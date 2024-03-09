@@ -441,3 +441,27 @@ Confirm Success:
 
     After simulating data loss, verify that your application behaves as expected. Test critical functionalities.
     Use the established connection in Azure Data Studio to examine the database and confirm the absence of the intentionally removed data.
+
+
+### Task 2: Restore Database from Azure SQL Database backup
+
+Restore the Database:
+
+    Open the Azure portal and navigate to your Azure SQL Database.
+    Go to the Overview page of your database.
+    Click on Restore in the toolbar.
+    Choose the backup source (which should be the backup taken just before the data loss).
+    Select the point-in-time backup point from which you want to create a new database.
+    
+Validation:
+
+    Once the restoration completes, connect to the restored database using Azure Data Studio.
+    Examine the data to ensure that it matches the state just before the data loss.
+    Test critical functionalities to verify that the restored database behaves as expected.
+    
+Production Database Update:
+
+    Keep in mind that the restored database will now function as your production database.
+    The previous production database, which lacks critical data, should be deleted in the Azure portal.
+    
+Remember to document this process meticulously for future reference. Regularly practice these recovery procedures to maintain confidence in your disaster recovery strategy.
