@@ -317,3 +317,23 @@ Backup and Recovery Testing:
     Once the backup completes, verify that the backup file is saved in the designated location on your computer.
     
 Remember to schedule regular backups and test the restoration process periodically to ensure the safety of your data
+
+
+### Task 2: Upload backup to blob storage
+Create an Azure Blob Storage Account:
+
+    Log in to the Azure Portal.
+    Click on Create a resource and search for Storage account.
+    Follow the prompts to create a new storage account.
+    Choose a unique name, select the appropriate region, and configure other settings (such as performance and redundancy options).
+    Once created, note down the connection string for later use.
+    
+Upload the Backup File to Blob Storage:
+
+    Open your preferred method of interacting with Azure (Azure Portal, Azure CLI, or Azure Storage Explorer).
+    Navigate to your newly created storage account.
+    Create a new Blob container within the storage account.
+    Upload your previously created database backup file (.bak extension) to this container.
+    Ensure that the container’s access level is set to Private or Blob (anonymous read access for blobs only) for security.
+
+
