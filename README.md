@@ -548,7 +548,7 @@ Application Testing (Again): Test your application against the restored primary 
 ![](https://github.com/Maxwella10/azure-database-migration902/blob/main/images/migration_failover_3.png)
 
 
-Testing Outcomes
+#### Testing Outcomes
 
 Latency and Replication Lag:
 
@@ -565,7 +565,7 @@ Failover Scenarios:
     Simulate failover scenarios (e.g., planned maintenance, disaster recovery).
     Document the time taken for failover and application behavior during the process.
     
-Insights Gained
+#### Insights Gained
 
 Cost Considerations:
   
