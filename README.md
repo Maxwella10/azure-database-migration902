@@ -631,3 +631,6 @@ Application Integration: Update your application connection strings to use Micro
 
 High Availability: Consider implementing geo-replication and failover for disaster recovery.
 
+
+### Task 2: Create DB Reader User
+
