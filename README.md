@@ -335,5 +335,37 @@ Upload the Backup File to Blob Storage:
     Create a new Blob container within the storage account.
     Upload your previously created database backup file (.bak extension) to this container.
     Ensure that the container’s access level is set to Private or Blob (anonymous read access for blobs only) for security.
+    
 
+### Task 3: Restore Database on Development environment
+Provision a New Windows VM:
 
+    In your Azure or virtualization platform, create a new Windows virtual machine (VM) that closely mirrors your development setup.
+    Ensure that the VM specifications (CPU, memory, storage) align with your requirements for testing and development.
+    
+Install SQL Server:
+
+    Once the VM is up and running, install SQL Server on it. You can use the same version as your production environment or a compatible one.
+    Configure SQL Server with the necessary components (such as database engine, SSMS, and any additional features you need).
+    
+Restore the Database Backup:
+
+    Transfer the database backup file (which you previously created from the production environment) to the new VM.
+    Open SQL Server Management Studio (SSMS) on the VM.
+    Connect to the SQL Server instance.
+    Right-click on Databases in the Object Explorer and choose Restore Database.
+    Select the backup file and follow the prompts to restore it onto the new VM.
+    Ensure that the restored database has the same schema and data as your production database.
+    
+Configure Security and Permissions:
+
+    Set up appropriate security measures for the sandbox environment. Limit access to authorized users.
+    Create separate logins and users for developers working in the sandbox.
+    Be cautious about granting excessive permissions to avoid accidental changes.
+    
+Test and Experiment Safely:
+
+    Now you have a “sandbox” environment where you can safely explore new concepts, test code changes, and experiment without affecting the production data.
+    Use this space to try out different scenarios, troubleshoot issues, and validate changes before deploying them to production.
+    
+Remember that the development environment should closely resemble the production environment to ensure accurate testing. Regularly refresh the sandbox with fresh data from production to maintain its relevance
