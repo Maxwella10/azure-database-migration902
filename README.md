@@ -510,9 +510,11 @@ Planned Failover to Secondary Region:
     Geo-Replication Setup: Ensure that you’ve already set up geo-replication for your Azure SQL Database, with the primary database in UK South and the secondary (geo-replica) in East US.
     Initiate Failover: In the Azure portal or using Azure CLI, initiate a planned failover to the secondary region. This transition will make the secondary copy the new primary.
     DNS Update: DNS entries for your database endpoints will be updated, pointing to the secondary region as the new primary. Clients can now write to the new primary endpoints.
+
     
 
 ![](https://github.com/Maxwella10/azure-database-migration902/blob/main/images/migration_failover.png)
+
 
 
     
@@ -520,9 +522,11 @@ Evaluate Availability and Data Consistency:
 
 
     Application Testing: Test your application against the new primary endpoints in East US. Ensure it behaves as expected and handles read and write operations.
+
     
 
 ![](https://github.com/Maxwella10/azure-database-migration902/blob/main/images/migration_failover_2.png)
+
 
 
 Data Consistency: Verify that the data in the secondary region is consistent with the state just before the failover. Check critical records and transactions.
@@ -539,4 +543,6 @@ DNS Update (Again): DNS entries will be updated once more, pointing back to the 
 
 Application Testing (Again): Test your application against the restored primary endpoints in UK South. Ensure it functions correctly.
 
-![]()
+
+
+![](https://github.com/Maxwella10/azure-database-migration902/blob/main/images/migration_failover_3.png)
