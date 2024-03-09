@@ -465,3 +465,39 @@ Production Database Update:
     The previous production database, which lacks critical data, should be deleted in the Azure portal.
     
 Remember to document this process meticulously for future reference. Regularly practice these recovery procedures to maintain confidence in your disaster recovery strategy.
+
+
+## Milestone 6
+
+### Task 1: Set up Geo-replication for Azure SQL Database
+
+Log in to the Azure Portal:
+
+    Navigate to the Azure Portal.
+    Create a New Azure SQL Database (if you haven’t already):
+    Click on Create a resource.
+    Search for SQL Database and select it.
+    Follow the prompts to create a new database.
+    Choose the appropriate geographical region for this primary database.
+    In this project, i chose uk-south as my primary database
+    
+Enable Geo-Replication:
+
+    Once your primary database is set up, go to its overview page.
+    Click on Geo-Replication in the left menu.
+    Click Add secondary.
+    Choose the target region where you want to create the replica (ensure it’s in a different geographical region).
+    In this project, i chose East US.
+    Configure the read-write or read-only access for the secondary database.
+    Click Create.
+    
+Monitor and Test:
+
+    Azure will automatically create a synchronized replica (secondary database) in the target region.
+    Monitor the replication status in the portal.
+    Test failover scenarios to ensure the secondary database is ready for use in case of a disaster.
+    
+Connection Strings:
+
+    Obtain the connection strings for both the primary and secondary databases.
+    Applications can use the secondary connection string for read operations, offloading traffic from the primary
