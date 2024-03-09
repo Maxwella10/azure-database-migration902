@@ -651,7 +651,7 @@ Assign the db_datareader Role:
     Execute the following SQL query to assign the db_datareader role to the DB Reader user:
 
     USE YourDatabaseName;
-ALTER ROLE db_datareader ADD MEMBER [YourEntraUser@YourTenant.onmicrosoft.com];
+    ALTER ROLE db_datareader ADD MEMBER [YourEntraUser@YourTenant.onmicrosoft.com];
 
 Replace YourDatabaseName with your actual database name and YourEntraUser with the DB Reader user’s Microsoft Entra ID.
 
