@@ -369,3 +369,36 @@ Test and Experiment Safely:
     Use this space to try out different scenarios, troubleshoot issues, and validate changes before deploying them to production.
     
 Remember that the development environment should closely resemble the production environment to ensure accurate testing. Regularly refresh the sandbox with fresh data from production to maintain its relevance
+
+
+### Task 4: Automate backups for Development environment
+
+Open SSMS on your Windows VM.
+
+Connect to the SQL Server instance where your development database resides.
+
+In the Object Explorer, right-click on your database and select Tasks > Back Up….
+
+In the Back Up Database dialog, configure the following options:
+
+    Backup type: Choose Full.
+    Destination: Specify a location where you want to save the backups (e.g., a local folder or network share).
+    Backup set name: Provide a descriptive name for the backup set.
+    Expiration: Set an appropriate retention period for the backups (e.g., keep backups for 1 week).
+    Schedule: Click on the Script button to generate a T-SQL script for the backup task.
+    Save the generated T-SQL script. You can create a SQL Server Agent Job to execute this script on a weekly basis.
+    
+Create a SQL Server Agent Job:
+
+    In SSMS, navigate to SQL Server Agent > Jobs.
+    Right-click and choose New Job.
+    Name the job (e.g., “WeeklyBackup”).
+    Under Steps, add a new step and paste the T-SQL script.
+    Configure the schedule to run weekly (e.g., every Sunday at midnight).
+    
+Test the Backup Task:
+
+    Execute the job manually to verify that backups are created successfully.
+    Monitor the job history for any issues.
+    
+By following these steps, you’ll have an automated weekly backup process in place, ensuring consistent protection for your evolving work in the development environment
