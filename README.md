@@ -402,3 +402,40 @@ Test the Backup Task:
     Monitor the job history for any issues.
     
 By following these steps, you’ll have an automated weekly backup process in place, ensuring consistent protection for your evolving work in the development environment
+
+## Milestone 5
+
+### Task 1: Mimic data loss in the production environment
+
+Restore AdventureWorks Database:
+
+    First, restore the AdventureWorks database from the provided backup file (adventureworks.bak) onto your SQL Server instance.
+    You can use SQL Server Management Studio (SSMS) or Azure Data Studio to perform the restoration.
+    
+Identify Critical Data:
+
+     Review the schema of the AdventureWorks database.
+    Identify tables or records that contain critical data. For example, consider customer information, sales transactions, or inventory levels.
+    
+Simulate Data Loss:
+
+    Choose a specific table or set of records to remove. Be deliberate in your selection.
+    Execute SQL commands to delete or modify data. For instance:
+
+    DELETE FROM Sales.SalesOrderDetail WHERE OrderQty > 200;
+    Document the exact changes made, including the affected tables and the reason for removal.
+    
+Document the Simulation:
+
+    Create a detailed record:
+    Date and Time: When the simulation occurred.
+    Affected Data: Specify which data was intentionally removed.
+    Purpose: Explain why this data was chosen (e.g., testing recovery procedures).
+    Steps Taken: Describe the SQL commands executed.
+    Expected Impact: Document how this data loss affects your application.
+    Recovery Plan: Outline the steps to restore the lost data.
+    
+Confirm Success:
+
+    After simulating data loss, verify that your application behaves as expected. Test critical functionalities.
+    Use the established connection in Azure Data Studio to examine the database and confirm the absence of the intentionally removed data.
