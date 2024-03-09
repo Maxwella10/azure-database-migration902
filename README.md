@@ -501,3 +501,24 @@ Connection Strings:
 
     Obtain the connection strings for both the primary and secondary databases.
     Applications can use the secondary connection string for read operations, offloading traffic from the primary
+
+
+### Task 2: Test failover and fallback
+
+Planned Failover to Secondary Region:
+
+    Geo-Replication Setup: Ensure that you’ve already set up geo-replication for your Azure SQL Database, with the primary database in UK South and the secondary (geo-replica) in East US.
+    Initiate Failover: In the Azure portal or using Azure CLI, initiate a planned failover to the secondary region. This transition will make the secondary copy the new primary.
+    DNS Update: DNS entries for your database endpoints will be updated, pointing to the secondary region as the new primary. Clients can now write to the new primary endpoints.
+
+[](migration_failover.png)
+    
+Evaluate Availability and Data Consistency:
+Application Testing: Test your application against the new primary endpoints in East US. Ensure it behaves as expected and handles read and write operations.
+Data Consistency: Verify that the data in the secondary region is consistent with the state just before the failover. Check critical records and transactions.
+Monitoring: Monitor performance and availability of the new primary. Look for any anomalies or issues.
+Failback to Primary Region:
+Stabilize the Secondary: If everything looks good, plan for the failback to the primary region (UK South).
+Initiate Failback: In the Azure portal or using Azure CLI, initiate a failback to the primary region. The original primary becomes the new primary again.
+DNS Update (Again): DNS entries will be updated once more, pointing back to the original primary endpoints.
+Application Testing (Again): Test your application against the restored primary endpoints in UK South. Ensure it functions correctly.
