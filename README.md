@@ -590,3 +590,44 @@ Business Continuity:
 
 ### Task 1: Configure Microsoft Entra ID Azure SQL Database
 
+Create and Populate a Microsoft Entra Tenant:
+
+    Start by creating a Microsoft Entra tenant. You can manage tenants entirely within Azure or use them for federation with an on-premises Active Directory Domain Service.
+    Learn more about creating and populating a Microsoft Entra tenant.
+    
+Associate Your Azure Subscription with Microsoft Entra ID:
+
+    Make your Azure subscription a trusted directory for Microsoft Entra ID. This association ensures that your Azure resources can leverage Microsoft Entra authentication.
+    Follow the steps in Associate or add an Azure subscription to your Microsoft Entra tenant.
+    
+Configure Microsoft Entra Authentication for Azure SQL Database:
+
+    In the Azure portal, navigate to your SQL server resource.
+    Under the Settings menu, select Microsoft Entra ID.
+    Enable Microsoft Entra-only authentication for your SQL Server.
+    This ensures that only Microsoft Entra identities can authenticate to your database.
+     
+Learn more in the tutorial on enabling [Microsoft Entra-only authentication](https://learn.microsoft.com/en-us/azure/azure-sql/database/authentication-azure-ad-only-authentication-tutorial?view=azuresql&tabs=azure-portal).
+
+Create an Microsoft Entra Admin:
+
+    Designate an admin who will manage user access and permissions.
+    Grant this admin the necessary permissions within your Azure SQL environment.
+    They will be responsible for adding users, assigning roles, and ensuring proper access control.
+    
+Test Connection Using Microsoft Entra Credentials in Azure Data Studio:
+
+    Open Azure Data Studio.
+    Use your Microsoft Entra credentials to connect to the production database.
+    Ensure that you can establish a successful connection.
+    
+#### Insights and Best Practices
+
+Security: Microsoft Entra ID provides robust security features. Ensure that your admin follows best practices for user management and access control.
+
+Monitoring: Monitor authentication logs and audit trails to detect any suspicious activity.
+
+Application Integration: Update your application connection strings to use Microsoft Entra authentication.
+
+High Availability: Consider implementing geo-replication and failover for disaster recovery.
+
