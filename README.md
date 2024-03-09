@@ -511,7 +511,7 @@ Planned Failover to Secondary Region:
     Initiate Failover: In the Azure portal or using Azure CLI, initiate a planned failover to the secondary region. This transition will make the secondary copy the new primary.
     DNS Update: DNS entries for your database endpoints will be updated, pointing to the secondary region as the new primary. Clients can now write to the new primary endpoints.
 
-[](migration_failover.png)
+![images/migration_failover.png]()
     
 Evaluate Availability and Data Consistency:
 Application Testing: Test your application against the new primary endpoints in East US. Ensure it behaves as expected and handles read and write operations.
