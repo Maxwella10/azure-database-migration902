@@ -694,6 +694,32 @@ UML Diagram: Architecture.
 
 UML diagram for this project is below
 
-![]
+
+![](https://github.com/Maxwella10/azure-database-migration902/blob/main/images/Azure_Database_Migration_Project_Architecture.png)
+
+
+#### Usage
+
+#### Connecting to the Database:
+
+    Use your Entra ID credentials to connect to the production database.
+    Test read queries to ensure proper permissions.
+    
+#### Monitoring and Auditing:
+
+    Monitor authentication logs and audit trails.
+    Regularly review user roles and permissions.
+    
+#### Insights Gained
+
+Security Enhancement:
+
+    Entra ID provides robust security features.
+    Least privilege principle ensures minimal permissions.
+    
+Application Integration:
+
+    Update application connection strings to use Entra ID.
+    Implement retry logic for transient errors during failover.
 
 
