@@ -301,3 +301,19 @@ Backup and Recovery Testing:
 
     Ensure that backup and recovery mechanisms are in place.
     Perform a test restore to validate the backup and recovery processes.
+
+
+### Task 1: Backup the on-Premises Database
+
+    Open SQL Server Management Studio (SSMS) on the Windows VM.
+    Connect to the SQL Server instance where your production database resides.
+    In the Object Explorer, right-click on your database and select Tasks > Back Up….
+    In the Back Up Database dialog, choose the following options:
+    Backup type: Select Full.
+    Destination: Specify a location where you want to save the backup file (e.g., a local folder or network share).
+    Backup set name: Provide a descriptive name for the backup set.
+    Expiration: Set an appropriate retention period for the backup.
+    Click OK to start the backup process. SSMS will create a full backup of your database.
+    Once the backup completes, verify that the backup file is saved in the designated location on your computer.
+    
+Remember to schedule regular backups and test the restoration process periodically to ensure the safety of your data
