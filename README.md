@@ -548,6 +548,41 @@ Application Testing (Again): Test your application against the restored primary 
 ![](https://github.com/Maxwella10/azure-database-migration902/blob/main/images/migration_failover_3.png)
 
 
+Testing Outcomes
+
+Latency and Replication Lag:
+
+    Measure the replication lag between the primary and secondary databases.
+    Understand the impact of network latency and database workload on replication.
+    
+Read-Only Workloads:
+
+    Leverage the readable secondary for read-only workloads (e.g., reporting, analytics).
+    Test the performance of read queries against the secondary.
+    
+Failover Scenarios:
+
+    Simulate failover scenarios (e.g., planned maintenance, disaster recovery).
+    Document the time taken for failover and application behavior during the process.
+    
+Insights Gained
+
+Cost Considerations:
+  
+    Understand the cost implications of maintaining a secondary database.
+    Evaluate whether active geo-replication or readable secondary is more suitable for your workload.
+    
+Application Resilience:
+
+    Ensure that your application can handle failover seamlessly.
+    Implement retry logic and connection pooling to handle transient errors during failover.
+    
+Business Continuity:
+
+    Geo-replication provides peace of mind for disaster recovery.
+    Regularly test failover to validate your setup.
+
+
 
 ## Milestone 7
 
